@@ -1,0 +1,247 @@
+[33mcommit eb713cf68f6cb10a56695e09cdc57704f6e13882[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mrestore-fcommit[m[33m)[m
+Author: Gabi <marinca.gabi15@gmail>
+Date:   Fri Jan 17 10:44:54 2025 +0200
+
+    Add .gitignore to exclude large files
+
+ .gitignore | 3 [32m+++[m
+ 1 file changed, 3 insertions(+)
+
+[33mcommit 02d00e51ba541584c4bb7eaedb8cec59af3816a0[m
+Author: Gabi <marinca.gabi15@gmail>
+Date:   Fri Jan 17 10:16:35 2025 +0200
+
+    fcommit
+
+ .../2db467bc-c50e-4e0f-9f94-e42d0f237f90.vsidx     | Bin [31m29411[m -> [32m0[m bytes
+ .../a00c7bb7-c246-4d33-8dfc-5d4510b99260.vsidx     | Bin [31m217317[m -> [32m0[m bytes
+ .../a5b096e8-9e95-4a24-8d74-68d4ae28ec37.vsidx     | Bin [31m16169[m -> [32m0[m bytes
+ .../ab2bfa81-986c-43d6-ae30-f17e53d486d3.vsidx     | Bin [31m21741[m -> [32m0[m bytes
+ .vs/lab9/FileContentIndex/read.lock                |   0
+ .vs/lab9/v17/.suo                                  | Bin [31m58368[m -> [32m0[m bytes
+ .vs/lab9/v17/Browse.VC.db                          | Bin [31m29196288[m -> [32m0[m bytes
+ .../v17/ipch/AutoPCH/131adcd7a589cdcc/CAMERA.ipch  | Bin [31m73859072[m -> [32m0[m bytes
+ .../v17/ipch/AutoPCH/3fc0d32e6a7f7d3a/CAMERA.ipch  | Bin [31m74907648[m -> [32m0[m bytes
+ .../v17/ipch/AutoPCH/7916acb6d30f5c84/MAIN.ipch    | Bin [31m121241600[m -> [32m0[m bytes
+ .../v17/ipch/AutoPCH/99ecd248501c4bba/MAIN.ipch    | Bin [31m118620160[m -> [32m0[m bytes
+ .../v17/ipch/AutoPCH/baf9752c08d58684/MESH.ipch    | Bin [31m108396544[m -> [32m0[m bytes
+ file-sizes.txt                                     | 269 [32m+++++++++++++++++++++[m
+ 13 files changed, 269 insertions(+)
+
+[33mcommit d68b2680938f9566289f01784a34f6790c959fd4[m[33m ([m[1;32mmain[m[33m)[m
+Author: Gabi <marinca.gabi15@gmail>
+Date:   Fri Jan 17 09:55:02 2025 +0200
+
+    only commit
+
+ .../2db467bc-c50e-4e0f-9f94-e42d0f237f90.vsidx     |     Bin [31m0[m -> [32m29411[m bytes
+ .../a00c7bb7-c246-4d33-8dfc-5d4510b99260.vsidx     |     Bin [31m0[m -> [32m217317[m bytes
+ .../a5b096e8-9e95-4a24-8d74-68d4ae28ec37.vsidx     |     Bin [31m0[m -> [32m16169[m bytes
+ .../ab2bfa81-986c-43d6-ae30-f17e53d486d3.vsidx     |     Bin [31m0[m -> [32m21741[m bytes
+ .vs/lab9/FileContentIndex/read.lock                |       0
+ .vs/lab9/v17/.suo                                  |     Bin [31m0[m -> [32m58368[m bytes
+ .vs/lab9/v17/Browse.VC.db                          |     Bin [31m0[m -> [32m29196288[m bytes
+ .../v17/ipch/AutoPCH/131adcd7a589cdcc/CAMERA.ipch  |     Bin [31m0[m -> [32m73859072[m bytes
+ .../v17/ipch/AutoPCH/3fc0d32e6a7f7d3a/CAMERA.ipch  |     Bin [31m0[m -> [32m74907648[m bytes
+ .../v17/ipch/AutoPCH/7916acb6d30f5c84/MAIN.ipch    |     Bin [31m0[m -> [32m121241600[m bytes
+ .../v17/ipch/AutoPCH/99ecd248501c4bba/MAIN.ipch    |     Bin [31m0[m -> [32m118620160[m bytes
+ .../v17/ipch/AutoPCH/baf9752c08d58684/MESH.ipch    |     Bin [31m0[m -> [32m108396544[m bytes
+ Camera.cpp                                         |      92 [32m+[m
+ Camera.hpp                                         |      40 [32m+[m
+ MedievalVillageOpenGL                              |       1 [32m+[m
+ Mesh.cpp                                           |      72 [32m+[m
+ Mesh.hpp                                           |      73 [32m+[m
+ Model3D.cpp                                        |     256 [32m+[m
+ Model3D.hpp                                        |      43 [32m+[m
+ OpenGL dev libs/include/GL/glew.h                  |   23686 [32m+[m
+ OpenGL dev libs/include/GLFW/glfw3.h               |    6547 [32m+[m
+ ProiectPG.exe                                      |     Bin [31m0[m -> [32m633856[m bytes
+ Resources lab 9.zip                                |     Bin [31m0[m -> [32m2092208[m bytes
+ Shader.cpp                                         |      99 [32m+[m
+ Shader.hpp                                         |      42 [32m+[m
+ SkyBox.cpp                                         |     141 [32m+[m
+ SkyBox.hpp                                         |      39 [32m+[m
+ glm/glm.hpp                                        |     137 [32m+[m
+ lab9.sln                                           |      31 [32m+[m
+ lab9.vcxproj                                       |     188 [32m+[m
+ lab9.vcxproj.filters                               |      98 [32m+[m
+ lab9.vcxproj.user                                  |       4 [32m+[m
+ main.cpp                                           |     805 [32m+[m
+ models/Tree/texturemade.png                        |     Bin [31m0[m -> [32m4005971[m bytes
+ models/Tree/tree.mtl                               |     372 [32m+[m
+ models/Tree/tree.obj                               | 1560515 [32m+++++++++++++++++[m
+ .../HDR/00199_OpenfootageNET_Nonntal01_LOW.hdr     |     Bin [31m0[m -> [32m1599956[m bytes
+ .../Textures/1024/Wooden Crate_Crate_BaseColor.png |     Bin [31m0[m -> [32m1365923[m bytes
+ .../Textures/1024/Wooden Crate_Crate_Height.png    |     Bin [31m0[m -> [32m301583[m bytes
+ .../Textures/1024/Wooden Crate_Crate_Metallic.png  |     Bin [31m0[m -> [32m1118[m bytes
+ .../Textures/1024/Wooden Crate_Crate_Normal.png    |     Bin [31m0[m -> [32m1360901[m bytes
+ .../Textures/1024/Wooden Crate_Crate_Roughness.png |     Bin [31m0[m -> [32m255753[m bytes
+ .../Wooden_Crate/Textures/1024/Wooden_Crate.json   |      42 [32m+[m
+ .../Textures/2048/Wooden Crate_Crate_BaseColor.png |     Bin [31m0[m -> [32m5185205[m bytes
+ .../Textures/2048/Wooden Crate_Crate_Height.png    |     Bin [31m0[m -> [32m1145795[m bytes
+ .../Textures/2048/Wooden Crate_Crate_Metallic.png  |     Bin [31m0[m -> [32m4166[m bytes
+ .../Textures/2048/Wooden Crate_Crate_Normal.png    |     Bin [31m0[m -> [32m6275420[m bytes
+ .../Textures/2048/Wooden Crate_Crate_Roughness.png |     Bin [31m0[m -> [32m965046[m bytes
+ .../Wooden_Crate/Textures/2048/Wooden_Crate.json   |      42 [32m+[m
+ models/Wooden_Crate/Wooden Crate.blend             |     Bin [31m0[m -> [32m1170492[m bytes
+ models/Wooden_Crate/Wooden Crate.fbx               |     Bin [31m0[m -> [32m52460[m bytes
+ models/Wooden_Crate/Wooden Crate.stl               |     Bin [31m0[m -> [32m29484[m bytes
+ models/Wooden_Crate/Wooden_Crate.mtl               |      14 [32m+[m
+ models/Wooden_Crate/Wooden_Crate.obj               |    1659 [32m+[m
+ models/animals/cow/colorOpacityCow.png             |     Bin [31m0[m -> [32m5264508[m bytes
+ models/animals/cow/colorOpacityCowAO.png           |     Bin [31m0[m -> [32m1141623[m bytes
+ models/animals/cow/colorOpacityCowBump.png         |     Bin [31m0[m -> [32m5092420[m bytes
+ models/animals/cow/colorOpacityCowNorm.png         |     Bin [31m0[m -> [32m2111834[m bytes
+ models/animals/cow/cowEye.png                      |     Bin [31m0[m -> [32m209948[m bytes
+ models/animals/cow/cowTM08New00RTime02.mtl         |      39 [32m+[m
+ models/animals/cow/cowTM08New00RTime02.obj         |   10101 [32m+[m
+ models/animals/cow/cows.mtl                        |     130 [32m+[m
+ models/animals/cow/cows.obj                        |   53395 [32m+[m
+ models/animals/horse/10026_Horse_v01-it2.mtl       |      16 [32m+[m
+ models/animals/horse/10026_Horse_v01-it2.obj       |   85724 [32m+[m
+ models/animals/horse/Horse_v01.jpg                 |     Bin [31m0[m -> [32m649806[m bytes
+ models/animals/horse/horses.mtl                    |      22 [32m+[m
+ models/animals/horse/horses.obj                    |  171409 [32m++[m
+ models/buildings/black_smith/black_smith.FBX       |     Bin [31m0[m -> [32m323808[m bytes
+ models/buildings/black_smith/black_smith.mtl       |      12 [32m+[m
+ models/buildings/black_smith/black_smith.obj       |   25479 [32m+[m
+ models/buildings/black_smith/texture/Blksmith.jpg  |     Bin [31m0[m -> [32m1102115[m bytes
+ models/buildings/castle/FairyTower.obj             |   21533 [32m+[m
+ models/buildings/castle/Tower_door_color.jpg       |     Bin [31m0[m -> [32m306355[m bytes
+ models/buildings/castle/Tower_plaster_color.jpg    |     Bin [31m0[m -> [32m566642[m bytes
+ models/buildings/castle/Tower_roof_color.jpg       |     Bin [31m0[m -> [32m319214[m bytes
+ models/buildings/castle/Tower_wood_color.jpg       |     Bin [31m0[m -> [32m494271[m bytes
+ models/buildings/castle/castletower.png            |     Bin [31m0[m -> [32m3840234[m bytes
+ models/buildings/castle/fairy_tower.mtl            |      12 [32m+[m
+ models/buildings/castle/fairy_tower.obj            |   16267 [32m+[m
+ models/buildings/fence/fences.mtl                  |      22 [32m+[m
+ models/buildings/fence/fences.obj                  |  169728 [32m++[m
+ models/buildings/fence/wood.png                    |     Bin [31m0[m -> [32m260053[m bytes
+ models/buildings/gate/door.mtl                     |      26 [32m+[m
+ models/buildings/gate/door.obj                     |    3483 [32m+[m
+ models/buildings/gate/door_obj.zip                 |     Bin [31m0[m -> [32m3492369[m bytes
+ models/buildings/gate/gate.mtl                     |      45 [32m+[m
+ models/buildings/gate/gate.obj                     |    4228 [32m+[m
+ models/buildings/gate/gateDoor.mtl                 |      13 [32m+[m
+ models/buildings/gate/gateDoor.obj                 |    2433 [32m+[m
+ models/buildings/gate/rock.png                     |     Bin [31m0[m -> [32m149045[m bytes
+ models/buildings/gate/texture/door NM.png          |     Bin [31m0[m -> [32m1720300[m bytes
+ models/buildings/gate/texture/door diff.png        |     Bin [31m0[m -> [32m1754615[m bytes
+ models/buildings/house2/house2.png                 |     Bin [31m0[m -> [32m1626766[m bytes
+ models/buildings/house2/houses2.mtl                |     102 [32m+[m
+ models/buildings/house2/houses2.obj                |   26018 [32m+[m
+ .../buildings/house3/Medieval house4_Diffuse.jpg   |     Bin [31m0[m -> [32m5050745[m bytes
+ models/buildings/house3/Medieval house4_Normal.jpg |     Bin [31m0[m -> [32m5380973[m bytes
+ models/buildings/house3/glass.png                  |     Bin [31m0[m -> [32m144551[m bytes
+ models/buildings/house3/house3.mtl                 |      23 [32m+[m
+ models/buildings/house3/house3.obj                 |   13229 [32m+[m
+ models/buildings/medieval_house/Medieval_House.mtl |      24 [32m+[m
+ models/buildings/medieval_house/Medieval_House.obj |   14410 [32m+[m
+ .../medieval_house/Texture/Medieval_House_Diff.png |     Bin [31m0[m -> [32m24393391[m bytes
+ .../medieval_house/Texture/Medieval_House_Nor.png  |     Bin [31m0[m -> [32m14995650[m bytes
+ .../medieval_house/Texture/Medieval_House_Spec.png |     Bin [31m0[m -> [32m7244900[m bytes
+ models/buildings/medieval_house/cart/Cart.mtl      |      32 [32m+[m
+ models/buildings/medieval_house/cart/Cart.obj      |     799 [32m+[m
+ .../buildings/medieval_house/cart/cartWheels.mtl   |      12 [32m+[m
+ .../buildings/medieval_house/cart/cartWheels.obj   |    2207 [32m+[m
+ models/buildings/medieval_house/cart/tex1.jpg      |     Bin [31m0[m -> [32m157803[m bytes
+ models/buildings/medieval_house/cart/tex2.jpg      |     Bin [31m0[m -> [32m125188[m bytes
+ models/buildings/medieval_house/cart/tex3.jpg      |     Bin [31m0[m -> [32m76355[m bytes
+ models/buildings/medieval_house/cart/tex4.jpg      |     Bin [31m0[m -> [32m95982[m bytes
+ models/buildings/medieval_house/cart/wheel1.mtl    |      12 [32m+[m
+ models/buildings/medieval_house/cart/wheel1.obj    |    1273 [32m+[m
+ models/buildings/medieval_house/cart/wheel2.mtl    |      12 [32m+[m
+ models/buildings/medieval_house/cart/wheel2.obj    |    1273 [32m+[m
+ models/buildings/tower/Tower_DiffuseMap_COLOR.png  |     Bin [31m0[m -> [32m5629450[m bytes
+ models/buildings/tower/Tower_DiffuseMap_DISP.png   |     Bin [31m0[m -> [32m3103178[m bytes
+ models/buildings/tower/Tower_DiffuseMap_NRM.png    |     Bin [31m0[m -> [32m5708334[m bytes
+ models/buildings/tower/Tower_DiffuseMap_OCC.png    |     Bin [31m0[m -> [32m3644446[m bytes
+ .../buildings/tower/Tower_DiffuseMap_SPEC (1).png  |     Bin [31m0[m -> [32m849670[m bytes
+ models/buildings/tower/Tower_Limes (1).obj         |   23962 [32m+[m
+ models/buildings/tower/WoodPlanksBare0333_3_S.jpg  |     Bin [31m0[m -> [32m163444[m bytes
+ models/buildings/tower/towers.mtl                  |      23 [32m+[m
+ models/buildings/tower/towers.obj                  |   25505 [32m+[m
+ models/buildings/wall/planks.jpg                   |     Bin [31m0[m -> [32m1026373[m bytes
+ models/buildings/wall/planks_NRM.jpg               |     Bin [31m0[m -> [32m1183241[m bytes
+ models/buildings/wall/walls.mtl                    |     717 [32m+[m
+ models/buildings/wall/walls.obj                    |   86970 [32m+[m
+ .../textures/boards(gratis)/tiled_dirty_planks.png |     Bin [31m0[m -> [32m4394870[m bytes
+ .../boards(gratis)/tiled_dirty_planks_normal.png   |     Bin [31m0[m -> [32m4537599[m bytes
+ .../tiled_dirty_planks_roughness.png               |     Bin [31m0[m -> [32m1621007[m bytes
+ .../windmill/textures/logs/base_color.png          |     Bin [31m0[m -> [32m2440177[m bytes
+ models/buildings/windmill/textures/logs/masks.png  |     Bin [31m0[m -> [32m1723192[m bytes
+ .../buildings/windmill/textures/logs/sticks_bc.jpg |     Bin [31m0[m -> [32m2023198[m bytes
+ .../buildings/windmill/textures/logs/sticks_n.jpg  |     Bin [31m0[m -> [32m5780182[m bytes
+ .../buildings/windmill/textures/logs/sticks_r.jpg  |     Bin [31m0[m -> [32m1011924[m bytes
+ .../planks(gratis)/boards_and_planks_bc.png        |     Bin [31m0[m -> [32m817343[m bytes
+ .../planks(gratis)/boards_and_planks_n.png         |     Bin [31m0[m -> [32m1186575[m bytes
+ .../planks(gratis)/boards_and_planks_roughness.png |     Bin [31m0[m -> [32m408121[m bytes
+ .../boards_and_planks_bc2.png                      |     Bin [31m0[m -> [32m1003018[m bytes
+ .../gratis because you are awesome/thatch_bc2.png  |     Bin [31m0[m -> [32m8048656[m bytes
+ .../gratis because you are awesome/thatch_bc3a.png |     Bin [31m0[m -> [32m10972853[m bytes
+ .../textures/thatch_no_opacity/thatch_bc.png       |     Bin [31m0[m -> [32m5511369[m bytes
+ .../textures/thatch_no_opacity/thatch_n.png        |     Bin [31m0[m -> [32m8038987[m bytes
+ .../thatch_no_opacity/thatch_roughness.png         |     Bin [31m0[m -> [32m2821467[m bytes
+ .../windmill/textures/thatch_with_opacity/info.txt |       1 [32m+[m
+ .../thatch_with_opacity/thatch_opacity_mask.png    |     Bin [31m0[m -> [32m99317[m bytes
+ models/buildings/windmill/windmill.mtl             |      12 [32m+[m
+ models/buildings/windmill/windmill.obj             |   11419 [32m+[m
+ models/buildings/windmill/windmillWings.mtl        |      12 [32m+[m
+ models/buildings/windmill/windmillWings.obj        |    9332 [32m+[m
+ models/catapult/catapult.mtl                       |      12 [32m+[m
+ models/catapult/catapult.obj                       |   74603 [32m+[m
+ models/catapult/catapult.png                       |     Bin [31m0[m -> [32m8177168[m bytes
+ models/cube.mtl                                    |      12 [32m+[m
+ models/cube.obj                                    |      30 [32m+[m
+ models/grass_field/grass.mtl                       |      12 [32m+[m
+ models/grass_field/grass.obj                       |   18941 [32m+[m
+ models/grass_field/greenTexture.jpg                |     Bin [31m0[m -> [32m564062[m bytes
+ models/plants/wheat/allGrass_001.mtl               |      36 [32m+[m
+ models/plants/wheat/allGrass_001.obj               |   18763 [32m+[m
+ models/plants/wheat/grass.zip                      |     Bin [31m0[m -> [32m223716[m bytes
+ models/plants/wheat/grassVari_v001.ass             |    3812 [32m+[m
+ models/plants/wheat/grassVari_v002.ass             |    3084 [32m+[m
+ models/plants/wheat/grassVari_v003.ass             |    3216 [32m+[m
+ models/plants/wheat/grassVari_v004.ass             |    3480 [32m+[m
+ models/plants/wheat/grassVari_v005.ass             |     773 [32m+[m
+ models/plants/wheat/wheat.png                      |     Bin [31m0[m -> [32m190715[m bytes
+ models/plants/wheat/wheatField.mtl                 |      12 [32m+[m
+ models/plants/wheat/wheatField.obj                 |      16 [32m+[m
+ models/scarecrow/scarecrow.mtl                     |      42 [32m+[m
+ models/scarecrow/scarecrow.obj                     |   29374 [32m+[m
+ models/scarecrow/txture.png                        |     Bin [31m0[m -> [32m287872[m bytes
+ models/ship/boat.mtl                               |      12 [32m+[m
+ models/ship/boat.obj                               |    1264 [32m+[m
+ models/ship/wood.png                               |     Bin [31m0[m -> [32m260053[m bytes
+ models/water/water.mtl                             |      12 [32m+[m
+ models/water/water.obj                             |      16 [32m+[m
+ models/water/waterTexture.png                      |     Bin [31m0[m -> [32m209879[m bytes
+ shaders/depthShader.frag                           |       6 [32m+[m
+ shaders/depthShader.vert                           |       8 [32m+[m
+ shaders/lightCube.frag                             |       8 [32m+[m
+ shaders/lightCube.vert                             |      14 [32m+[m
+ shaders/screenQuad.frag                            |      13 [32m+[m
+ shaders/screenQuad.vert                            |      13 [32m+[m
+ shaders/shaderStart.frag                           |      92 [32m+[m
+ shaders/shaderStart.vert                           |      27 [32m+[m
+ shaders/skyboxShader.frag                          |      11 [32m+[m
+ shaders/skyboxShader.vert                          |      15 [32m+[m
+ shaders/snowShader.frag                            |       7 [32m+[m
+ shaders/snowShader.vert                            |      11 [32m+[m
+ skybox/back.tga                                    |     Bin [31m0[m -> [32m786476[m bytes
+ skybox/bottom.tga                                  |     Bin [31m0[m -> [32m1048812[m bytes
+ skybox/front.tga                                   |     Bin [31m0[m -> [32m786450[m bytes
+ skybox/left.tga                                    |     Bin [31m0[m -> [32m786476[m bytes
+ skybox/right.tga                                   |     Bin [31m0[m -> [32m786450[m bytes
+ skybox/sunset/sunset_bk.tga                        |     Bin [31m0[m -> [32m786971[m bytes
+ skybox/sunset/sunset_dn.tga                        |     Bin [31m0[m -> [32m10779[m bytes
+ skybox/sunset/sunset_ft.tga                        |     Bin [31m0[m -> [32m786971[m bytes
+ skybox/sunset/sunset_lf.tga                        |     Bin [31m0[m -> [32m786971[m bytes
+ skybox/sunset/sunset_rt.tga                        |     Bin [31m0[m -> [32m786971[m bytes
+ skybox/sunset/sunset_up.tga                        |     Bin [31m0[m -> [32m786971[m bytes
+ skybox/top.tga                                     |     Bin [31m0[m -> [32m982875[m bytes
+ stb_image.cpp                                      |       2 [32m+[m
+ stb_image.h                                        |    7762 [32m+[m
+ tiny_obj_loader.cpp                                |       3 [32m+[m
+ tiny_obj_loader.h                                  |    1662 [32m+[m
+ 210 files changed, 2543710 insertions(+)
